@@ -1,4 +1,4 @@
--- My neovim config
+-- My nvim config
 
 require("config.lazy")
 
