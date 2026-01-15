@@ -59,9 +59,15 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
+
+-- Setup Keybinds to open New tab
+vim.keymap.set("n","<leader>ee", ":tabnew<cr>",{desc = "Open a new tab"})
+vim.keymap.set("n","<leader>rr", ":tabc<cr>",{desc = "Close the current tab"})
+
+
 -- Setup Telescope Keybinds
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })

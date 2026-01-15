@@ -1,7 +1,7 @@
 return {
    "neovim/nvim-lspconfig",
    config = function() 
-      local lsps = {{"clangd"},{"rust_analyzer"},{"lua-language-server"}}
+      local lsps = {{"clangd"},{"rust_analyzer"},{"lua-language-server"},{"pyright"}}
       
       for _, lsp in pairs(lsps) do
          local name, config = lsp[1], lsp[2]
