@@ -61,7 +61,7 @@ require("lazy").setup({
 
 
 -- Setup Keybinds to open New tab
-vim.keymap.set("n","<leader>ee", ":tabnew<cr>",{desc = "Open a new tab"})
+vim.keymap.set("n","<leader>ee", ":tabnew<cr><cmd>Yazi<cr>",{desc = "Open a new tab with Yazi"})
 vim.keymap.set("n","<leader>rr", ":tabc<cr>",{desc = "Close the current tab"})
 
 
